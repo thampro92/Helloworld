@@ -1,0 +1,13 @@
+﻿@page
+@model HelloworldRazorPage.Categories.IndexModel
+
+<h1>Categories</h1>
+<p>Welcome to the Categories page!</p>
+<p>Here you can find a list of categories.</p>
+@foreach (var category in Model.categories)
+{
+    <div>
+        <h2>@category.Name</h2>
+        <p>@category.DisplayOrder</p>
+    </div>
+}
